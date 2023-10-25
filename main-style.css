@@ -8,16 +8,16 @@ button formatting
 navigation bar
 */
 
-body{background-color: #FFF9F3;}
+body{background-color: #FFFDFA;}
 
 h1, h2, h3, h4, h5, h6{
-    color: #0A191A;
-    font-family: Alef, Verdana, Tahoma, sans-serif;
+    color: #393F4A;
+    font-family: "DM Sans", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p{
-    color: #0A191A;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14pt;
 }
 
@@ -34,21 +34,21 @@ p a:hover{
 }
 
 a.button:link, a.button:visited{
-    color: #FFF9F3;
-    font-family: Alef, Verdana, Tahoma, sans-serif;
+    color: #FFFDFA;
+    font-family: "DM Sans", Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    background-color: #4BB9BD;
+    background-color: #358285;
     padding: 10px 30px; 
 }
 
-a.button:hover{background-color: #358285;}
+a.button:hover{background-color: #2D6E70;}
 
 nav{
     width: 100%;
-    background-color: #153436;
-    font-family: Alef, Verdana, Tahoma, sans-serif;
+    background-color: #DFF3FF;
+    font-family: DM Sans, Tahoma, Geneva, Verdana, sans-serif;
     float: left;
     position: fixed;
     top: 0;
@@ -69,22 +69,20 @@ nav ul{
 nav li, .dropdown-content{display: inline;}
 
 nav a{
-    background-color: #153436;
+    background-color: #DFF3FF;
     display: block;
     float: right;
     padding: 15px 25px;
-    color: #FFF9F3;
+    color: #393F4A;
     font-size: 14pt;
     text-decoration: none;
 }
 
-nav a:hover, .dropdown:hover a.dropbtn{background-color: #0A191A;}
+nav a:hover, .dropdown:hover a.dropbtn{background-color: #C8DAE6;}
 
-.dropdown-content a:hover{
-    border-left: 2px solid #5CE1E6;
-}
+.dropdown-content a:hover{border-left: 2px solid #4BB9BD;}
 
-nav a.current{text-decoration: underline #5CE1E6 2px;}
+nav a.current{text-decoration: underline #4BB9BD 2px;}
 
 nav a.final-link{margin-right: 50px;}
 
@@ -97,7 +95,7 @@ nav a.final-link{margin-right: 50px;}
     display: none;
     position: absolute;
     top: 56px;
-    background-color: #153436;
+    background-color: #DFF3FF;
     min-width: 250px;
     padding: 10px;
 }
@@ -107,7 +105,7 @@ nav a.final-link{margin-right: 50px;}
     float: left;
     width: 228px;
     padding: 10px 10px;
-    color: #FFF9F3;
+    color: #393F4A;
     font-size: 14pt;
     text-decoration: none;
 }
