@@ -1,0 +1,165 @@
+/*
+CSS file for general formatting rules that should apply to the whole document
+i.e. 
+background color
+text formatting: font, font size, font color, text alignment
+link formatting: link, visited link, hovered link
+button formatting
+navigation bar
+*/
+
+body{background-color: #FFFDFA;}
+
+h1 {
+    font-size: 75px;
+  }
+  
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+  }
+  
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 20px;
+  }
+  
+h6 {
+    font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0; margin: 0;
+    color: #393F4A;
+    font-family: "DM Sans", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+}
+
+.p1 {
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+
+.p2 {
+    background-color: #f9fafc;
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.p3 {
+    color: #358285;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+p a, p a:active, p a:visited{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: #FF7A82;
+    text-decoration: underline;
+}
+
+a.button:link, a.button:visited{
+    color: #FFFDFA;
+    font-family: "DM Sans", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #358285;
+    padding: 10px 30px; 
+}
+
+a.button:hover{background-color: #2D6E70;}
+
+nav{
+    width: 100%;
+    background-color: #DFF3FF;
+    font-family: DM Sans, Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    position: fixed;
+    top: 0;
+    margin: 0 -8px;
+}
+
+nav img.logo{
+    float: left;
+    clear: right;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li, .dropdown-content{display: inline;}
+
+nav a{
+    background-color: #DFF3FF;
+    display: block;
+    float: right;
+    padding: 15px 25px;
+    color: #393F4A;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+nav a:hover, .dropdown:hover a.dropbtn{background-color: #C8DAE6;}
+
+.dropdown-content a:hover{border-left: 2px solid #4BB9BD;}
+
+nav a.current{text-decoration: #4BB9BD 2px;}
+
+nav a.final-link{margin-right: 50px;}
+
+.dropdown{
+    position: relative;
+    float: right;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 56px;
+    background-color: #DFF3FF;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.dropdown-content a, .dropdown-subheading{
+    display: block;
+    float: left;
+    width: 228px;
+    padding: 10px 10px;
+    color: #393F4A;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+.article-list a{
+    font-size: 12pt;
+    margin-left: 20px;
+    padding: 5px 10px;
+    width: 208px;
+}
+
+.dropdown:hover .dropdown-content{display: block;}
