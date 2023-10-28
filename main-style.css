@@ -41,6 +41,7 @@ a.button:link, a.button:visited{
     display: inline-block;
     background-color: #358285;
     padding: 10px 30px; 
+    border-radius: 5px;
 }
 
 a.button:hover{background-color: #2D6E70;}
