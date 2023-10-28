@@ -59,6 +59,8 @@ nav{
 nav img.logo{
     float: left;
     clear: right;
+    margin: 10px;
+    max-height: 36px;
 }
 
 nav ul{
