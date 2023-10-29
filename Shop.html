@@ -4,14 +4,18 @@
         <title>Shop NotchPen</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="shop.css">
         <link rel="stylesheet" href="main-style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20SAns">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     </head>
 
     <body>
+        <header>
+            <img src="images/logo-copy.png" alt="logo">
+        </header>
         <nav class="fixed-element">
-            <img class="logo" src="/images/logo.png" alt="logo" style="width:50px;height:50px;">
+            <img id="nav-logo" class="logo" src="images/logo.png" alt="logo">
             <ul>
                 <li><a class="final-link" href="FAQ.html">FAQ</a></li>
                 <li><a class="current" href="Shop.html">Shop</a></li>
@@ -20,8 +24,8 @@
                     <ul class="dropdown-content">
                         <!-- When writing html for about page, add the text after the # as an id on the respective header-->
                         <li><a href="About.html#our-objective">Our Objective</a></li>
-                        <li class="dropdown-subheading">About NotchPen</li>
-                        <li>
+                        <li class="submenu">
+                            <span class="dropdown-subheading">About NotchPen</span>
                             <ul class="article-list">
                                 <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
                                 <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
@@ -35,26 +39,33 @@
                 <li><a href="Index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
             </ul>
         </nav>
-        <div>
-            <span>Featured</span>
-            <img src="/images/image_name.file_type" alt="Notch Pen Product Image">
+        <div class="main-product clearfix">
+            <div class="product-img">
+                <span class="label">Featured</span>
+                <img src="images/image-filler.png" alt="Notch Pen Product Image">
+            </div>
+            <div class="product-description">
+                <h1>NotchPen</h1>
+                <p>$$$</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sapien ipsum, facilisis accumsan sagittis in, 
+                    condimentum ut massa. Curabitur commodo quam ultrices gravida convallis. Fusce enim sem, mattis vel ligula quis, 
+                    congue lacinia mi. Donec porta non metus vitae iaculis. Vivamus molestie commodo dui quis semper. Sed porttitor 
+                    orci arcu, non egestas metus maximus id. Integer nibh felis, elementum at ornare et, pharetra in metus. 
+                    Integer at consectetur dui. Phasellus lacinia vestibulum erat, quis pulvinar risus faucibus ultrices. 
+                    Morbi tempus lacinia feugiat. Suspendisse suscipit tortor id ante eleifend, sit amet rhoncus nibh elementum.
+                </p>
+            </div>
         </div>
-        <div>
-            <h1>NotchPen</h1>
-            <p>$$$</p>
-            <p>
-                (description)
-            </p>
-        </div>
-        <div> <!-- container for "other products"-->
+        <div class="gallery"> <!-- container for "other products"-->
             <h1>Accessories</h1>
-            <div>
-                <img src="/images/image_name.file_type" alt="Stencil Product Image">
+            <div class="product product1">
+                <img class="product-img" src="images/image-filler.png" alt="Stencil Product Image">
                 <h2>Stencil</h2>
                 <p>$$$</p>
             </div>
-            <div>
-                <img src="/images/image_name.file_type" alt="Wrist Strap Product Image">
+            <div class="product product2">
+                <img class="product-img" src="images/image-filler.png" alt="Wrist Strap Product Image">
                 <h2>Wrist Strap</h2>
                 <p>$$$</p>
             </div>
