@@ -1,0 +1,59 @@
+Style Guidelines:
+
+===========================================
+Overall
+===========================================
+
+Our website will be simplistic with a focus on function and readability.
+Elements should be flat and one colour (no gradients).
+We want the website to look calm and evoke the feeling of paper and note-taking.
+
+===========================================
+Colors
+===========================================
+
+text + common:
+- #393F4A
+- #C8DAE6
+- #DFF3FF
+
+accent:
+- #FF7A82
+- #FFDAB9
+
+background:
+- #FFFDFA
+- #F9FAFC
+
+buttons + secondary accent:
+- #4BB9BD
+- #358285
+- #2D6E70
+
+===========================================
+Iconography
+===========================================
+
+Icons should be simple, flat and one-colour (either the dark text colour or background colour).
+We can use icons on The Noun Project.
+
+===========================================
+Typography
+===========================================
+
+We will use DM sans for headers and Poppins for paragraphs. Both are from google fonts.
+
+===========================================
+Links
+===========================================
+
+Links will be "hidden" but will change colour and underline when user mouses over them.
+For our website there will likely only be links for contact information,
+so the loss in usability of having the links not immediately obvious is worth making the website appear more simple.
+
+===========================================
+Buttons
+===========================================
+
+Buttons will be flat and darken colour on hover.
+
