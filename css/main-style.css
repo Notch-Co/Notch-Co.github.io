@@ -69,7 +69,11 @@ nav{
     z-index: 1;
 }
 
-nav img.logo{
+nav img.hidden{
+    display: none;
+}
+
+nav img#logo{
     float: left;
     clear: right;
     margin: 10px;
@@ -81,6 +85,13 @@ nav ul{
     margin: 0;
     padding: 0;
 }
+
+nav.centered-nav > ul{
+    max-width: 33%;
+    margin: 0 auto;
+}
+
+/*need to fix behavious of nav in response to changing window size*/
 
 nav li, .dropdown-content{display: inline;}
 
