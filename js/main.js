@@ -5,21 +5,28 @@ function displaySmallNav(){
     logo.className = logo.className.replace("hidden", "");
 }
 
+function displayCenteredNav(){
+    const nav = document.getElementById("nav");
+    if (!nav.className.includes("centered-nav")){
+        nav.className += " centered-nav";
+    }
+    const logo = document.getElementById("logo");
+    if (!logo.className.includes("hidden")){
+        logo.className = logo.className + " hidden";
+    }
+}
+
 const options = {
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.0,
 };
 
-let visible = true;
+const observer = new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting === true){
+        displayCenteredNav();
+    } else {
+        displaySmallNav();
+    }
+}, options);
 
-const observer = new IntersectionObserver((entries, observer) => 
-    {entries.forEach(entry => 
-        {entry.intersectionRatio > 0 ? visible = true : visible = false});
-    }, options);
-
-const bigLogo = document.getElementById("header-logo");
-observer.observe(bigLogo);
-
-if (!visible){
-    displaySmallNav();
-}
+observer.observe(document.getElementById("header-logo"));
