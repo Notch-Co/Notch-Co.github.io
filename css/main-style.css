@@ -91,7 +91,8 @@ nav.centered-nav > ul{
     margin: 0 auto;
 }
 
-/*need to fix behavious of nav in response to changing window size*/
+/*need to fix behavious of nav in response to changing window size
+can probably be fixed by using flexbox*/
 
 nav li, .dropdown-content{display: inline;}
 
