@@ -42,23 +42,30 @@ h6 {
     text-align: center;
 }
 
+.p4 {
+    background-color: #f9fafc;
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
 .square{
-    height: 330px;
-    width: 330px;
+    height: 350px;
+    width: 350px;
     display: inline;
     background-color: #dff3ff;
 }
 
 .square2{
-    height: 330px;
-    width: 330px;
+    height: 350px;
+    width: 350px;
     margin: auto;
     background-color: #dff3ff;
 }
 
 .square3{
-    height: 330px;
-    width: 330px;
-    display: inline;
+    margin: auto
+    height: 350px;
+    width: 350px;
     background-color: #dff3ff;
 }
