@@ -43,16 +43,24 @@ h6 {
 }
 
 .p4 {
-    background-color: #f9fafc;
     color: #393F4A;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
     font-size: 20px;
+}
+
+.p5 {
+    background-color: #ffefe0;
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
 }
 
 .square{
     height: 350px;
     width: 350px;
     display: inline;
+    position: relative;
     background-color: #dff3ff;
 }
 
@@ -64,8 +72,8 @@ h6 {
 }
 
 .square3{
-    margin: auto
-    height: 350px;
     width: 350px;
+    height: 350px;
+    margin: auto;
     background-color: #dff3ff;
 }
