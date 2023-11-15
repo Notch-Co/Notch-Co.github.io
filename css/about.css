@@ -60,8 +60,9 @@ h6 {
     height: 350px;
     width: 350px;
     display: inline;
-    position: relative;
+    position: absolute;
     background-color: #dff3ff;
+    z-index: 0;
 }
 
 .square2{
@@ -69,6 +70,7 @@ h6 {
     width: 350px;
     margin: auto;
     background-color: #dff3ff;
+    position: relative;
 }
 
 .square3{
@@ -76,4 +78,10 @@ h6 {
     height: 350px;
     margin: auto;
     background-color: #dff3ff;
+    position: relative;
+}
+
+.square img{
+    position: absolute;
+    z-index: 3;
 }

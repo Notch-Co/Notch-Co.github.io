@@ -9,33 +9,36 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
    <link rel="stylesheet" href="css/main-style.css">
    <link rel="stylesheet" href="css/about.css">
+   <script src="js/main.js" defer></script>
 </head>
-
-    <nav class="fixed-element">
-        <img class="logo" src="images/logo.png" alt="logo">
-        <ul>
-            <li><a class="final-link" href="FAQ.html">FAQ</a></li>
-            <li><a href="Shop.html">Shop</a></li>
-            <li class="dropdown">
-                <a class="dropbtn" href="About.html">About</a>
-                <ul class="dropdown-content">
-                    <!-- When writing html for about page, add the text after the # as an id on the respective header-->
-                    <li><a href="About.html#our-objective">Our Objective</a></li>
-                    <li class="submenu">
-                        <span class="dropdown-subheading">About NotchPen</span>
-                        <ul class="article-list">
-                            <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
-                            <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="About.html#testimonies">Testimonies</a></li>
-                    <li><a href="About.html#meet-the-team">Meet the Team</a></li>
-                    <li><a href="About.html#contact-us">Contact Us</a></li>
-                </ul>
-            </li>
-            <li><a class="current" href="Index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
-        </ul>
-    </nav>
+<header id="header-logo">
+  <img src="images/logo-copy.png" alt="logo">
+</header>
+<nav id="nav" class="fixed-element centered-nav">
+  <img id="logo" class="hidden" src="images/logo.png" alt="logo">
+  <ul>
+      <li><a class="final-link" href="FAQ.html">FAQ</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li class="dropdown">
+          <a class="dropbtn current" href="About.html">About</a>
+          <ul class="dropdown-content">
+              <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+              <li><a href="About.html#our-objective">Our Objective</a></li>
+              <li class="submenu">
+                  <span class="dropdown-subheading">About NotchPen</span>
+                  <ul class="article-list">
+                      <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                      <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                  </ul>
+              </li>
+              <li><a href="About.html#testimonies">Testimonies</a></li>
+              <li><a href="About.html#meet-the-team">Meet the Team</a></li>
+              <li><a href="About.html#contact-us">Contact Us</a></li>
+          </ul>
+      </li>
+      <li><a href="Index.html">Home</a></li> 
+  </ul>
+</nav>
 
     <div style="margin-top: 70px;">
         <h1><b>Our Objective.</b></h1>
@@ -59,11 +62,10 @@
                        Note-Taking Accessibility."</p>
         <div style="margin-top: 30px;">
         <h2><b>Testimonies</b></h2>
-         <img src="output-outlinepngtools.png" alt="star">
          <!--<img src="images/testimoniesboxes.jpg" alt="Testimonies" width="1000" height="1500"> -->
          <!-- create divs for testimony boxes and add the stars-->
-         <div style="float:left;" class="square"></div>
-         <div id="text">
+         <div id="text" class="square">
+         <img src="images/output-onlinepngtools.png" alt="star">
          <p class="p4"><b>Laura S.</b> "NotchPen has</br>
                        transformed my life! As a</br>
                        visually impaired student, I've</br>
@@ -74,30 +76,29 @@
                        ease. It's a game-changer, and</br>
                        I can't imagine my academic</br>
                        journey without it."</p>
-
-        <p class="p4"><b>John M.</b> "I recently started using</br>
-                        NotchPen at work, and it's been</br>
-                        a fantastic addition to my</br>
-                        toolkit. It's simple to use, and the</br>
-                        raised strokes are clear and</br>
-                        tactile. NotchPen has made</br>
-                        taking notes during meetings</br>
-                        and brainstorming sessions a</br>
-                        breeze."</p>
-
-        <p class="p4"><b>Sophie R.</b> "I bought NotchPen for</br>
-                         my son, who is visually</br>
-                         impaired. It's an excellent aid for</br>
-                         his schoolwork. He now takes</br>
-                         pride in creating his notes</br>
-                         independently, and his confidence has soared.</br>
-                         NotchPen is a wonderful tool for</br>
-                         parents and their children with</br>
-                         visual impairments."</p>
-
          </div>
-         <div style="text-align:center;" class="square2"></div>
-         <div style="float:right;" class="square3"></div>
+         <div class="square2">
+          <p class="p4"><b>John M.</b> "I recently started using</br>
+                           NotchPen at work, and it's been</br>
+                           a fantastic addition to my</br>
+                           toolkit. It's simple to use, and the</br>
+                           raised strokes are clear and</br>
+                           tactile. NotchPen has made</br>
+                           taking notes during meetings</br>
+                           and brainstorming sessions a</br>
+                           breeze."</p>
+        </div>
+         <div style="float:right;" class="square3">
+         <p class="p4"><b>Sophie R.</b> "I bought NotchPen for</br>
+                          my son, who is visually</br>
+                          impaired. It's an excellent aid for</br>
+                          his schoolwork. He now takes</br>
+                          in creating his notes</br>
+                          independently, and his confidence has soared.</br>
+                          NotchPen is a wonderful tool for</br>
+                          parents and their children with</br>
+                          visual impairments."</p>
+         </div>
 
          <p class="p3">"NotchPen is not just a pen; it's a</br>
                          beacon of independence for</br>
@@ -106,7 +107,7 @@
                           toward a future filled with</br>
                               possibilities."</p>
          <h2><b>Meet the Team</b></h2>
-         <img src="meet-the-team.png" alt="profile">
+         <img src="images/meet-the-team.png" alt="profile">
          <h1><b>Contact Us.</b></h1>
          <p class="p5">
             At Notch, we're here to help and hear from you.</br>
