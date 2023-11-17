@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
    <link rel="stylesheet" href="css/main-style.css">
    <link rel="stylesheet" href="css/about.css">
+    <script src="about.js" async> </script>
 </head>
 <!--<body>-->
     <!-- copy and paste this into the body of each page -->
@@ -61,38 +62,42 @@
         <div style="margin-top: 30px;">
         <h2><b>Testimonies</b></h2>
         <img scr= "C:\Users\mujai\Downloads\testimoniesboxes.jpg"alt="Testimonies" width="500" height="600">
+   <div class="container" >
+    <div class="header" >
+        <h5>An issue, a question ? Do not hesitate to use this form to discuss with us!</h5>
     </div>
-             <p>Want clarification on anything?Ask usa question!</p>
-      <p>  Tried our product? Leave us a review! </p>    
-      <form action="/page-processing-data" method="post">
-         <div>
-           <label for="name">Your name</label>
-             <input type="text" id="name" name="name" placeholder="Marie" required>
-         </div>
-
-         <div>
-           <label for="email">e-mail</label>
-             <input type="email" id="email" name="email" placeholder="myemailadresse@gmail.com" required>
-         </div>
-
-         <div>
-           <label for="subject">What is the subject of your message ?</label>
-             <select name="subject" id="subject" required>
-               <option value="" disabled selected hidden>Select the subject of your message</option>
-               <option value="question-product">Question about product</option>
-               <option value="review">review</option>
-               <option value="other">Other...</option>
-             </select>
-          </div>
-
-          <div>
+    <form class="form" id="form" action="/page-processing-data" method="post">
+        <div class="form-control">
+            <label for="name">Your name</label>
+            <input type="text" id="username" name="username" placeholder="Marie" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation"></i>
+            <small>Message d'erreur</small>
+        </div>
+        <div class="form-control">
+            <label for="email">e-mail</label>
+            <input type="email" id="email" name="email" placeholder="myemailadresse@gmail.com" required>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation"></i>
+            <small>Message d'erreur</small>
+        </div>
+        <div class="form-control">
+            <label for="subject">What is the subject of your message ?</label>
+            <select name="subject" id="subject" required>
+                <option value="" disabled selected hidden>Select the subject of your message</option>
+                <option value="question-product">Want clarification on something</option>
+                <option value="review-product">Leave us a review</option>
+                <option value="other">Other...</option>
+            </select>
+        </div>
+        <div class="form-control">
             <label for="message">your message </label>
-              <textarea id="message" name="message" placeholder="Hello,I contact you for...." required></textarea>
-          </div>
-
-          <div>
+            <textarea id="message" name="message" placeholder="Hello,I contact you for...." required></textarea>
+        </div>
+        <div>
             <button type="submit">Send my message</button>
-          </div>
-     </form>
+        </div>
+    </form>
+</div>
 </body>
 </html>
