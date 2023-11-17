@@ -41,3 +41,127 @@ h6 {
     font-size: 25px;
     text-align: center;
 }
+*{
+   box-sizing: border-box; 
+}
+:root{
+   --color-fisrt:#ffdab9;
+   --color-second:#fffdfa;
+   --color-white:#fff;
+   --color-success:#ffdab9;
+   --color-error:#e74c3c;
+   
+}
+
+.container{
+   background:var(--color-white);
+   border-radius:5px;
+   box-shadow: 0 2px 6px rgba(0,0,0.5);
+   width:400px;
+   max-width:100%;
+ 
+
+}
+.header{
+   background:#f7f7f7;
+   border-bottom: 1px solid var(--color-second);
+   padding: 20px 40px;       
+        
+}
+.header h5{
+   margin: 0;
+   text-align: center;
+   font-style: italic;
+           
+}
+.form{
+   padding: 30px 40px;
+}
+.form-control{
+   margin-bottom:10px;
+   padding-bottom: 20px;
+   position: relative;
+}
+.form-control label{
+   display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control select {
+   width: 100%;
+   padding:8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size:16px;
+   line-height: 16px;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+.form-option {
+   padding: 8px;
+ }
+ 
+
+.form-option:hover {
+   background-color: #f7f7f7;
+ }
+textarea{
+   width:100%;
+   border:3px solid #ffdab9;
+   padding:10px;
+   margin-bottom:25px;
+   height:100px;
+   resize:none
+}
+
+.form-control input{
+   border: 2px solid var(--color-second);
+   border-radius: 4px;
+   display:block;
+   font-family: Arimo;
+   font-size: 14px;
+   width: 100%;
+   height: 40px;
+   padding-left: 10px;
+}
+
+.form-control i{
+   position: absolute;
+   top: 33px;
+   right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+   position: absolute;
+   bottom:0;
+   left:0;
+   visibility: hidden;
+}
+.form button{
+   background: var(--color-first);
+   border: 2px solid var(--color-first);
+    color: var(--color-white);
+   display: block;
+   font-family: inherit;
+   border-radius:  4px;
+   padding: 10px;
+   font-size: 16px;
+   width: 100%;
+   cursor : pointer
+}
+.form-control.success input{
+   border-color: var(--color-success);
+}
+.form-control.error input{
+   border-color: var(--color-error);
+}
+.form-control.success i.fa-check-circle{
+   color: var(--color-success);
+   visibility: visible;                          
+}
+.form-control.error i.fa-exclamation{ 
+   color: var(--color-error);
+   visibility: visible;                          
+}
+.form-control.error small{
+   color: var(--color-error);
+   visibility: visible;
+}
