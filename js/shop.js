@@ -25,10 +25,12 @@ function addProduct(elementID){
     cart = document.getElementById("cart");
 
     cart.innerHTML = cart.innerHTML + "\n" 
-    + "<img class=\"prod-img\" src=\"" + imgPath + "\" alt=\"" + productName + " image\">\n"
-    + "<h6 class=\"prod-name\">" + productName + "</h6>\n"
-    + "<select>\n" + options + "</select>\n"
-    + "<p class=\"price\">" + price + "</p>";
+    + "<div class=\"cart-item\">"
+    + "\t<img class=\"prod-img\" src=\"" + imgPath + "\" alt=\"" + productName + " image\">\n"
+    + "\t<h6 class=\"prod-name\">" + productName + "</h6>\n"
+    + "\t<select>\n" + options + "</select>\n"
+    + "\t<p class=\"price\">" + price + "</p>\n"
+    + "</div>";
 }
 
 document.getElementById("buy-pen").addEventListener("click", function(){addProduct("pen")});
