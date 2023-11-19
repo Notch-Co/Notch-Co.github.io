@@ -59,31 +59,28 @@ div.gallery{
     margin-top: 100px;
 }
 
+div.product-gallery{
+    margin: auto 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 div.product{
-    width: 35%;
-}
-
-div.product1{
-    float: left;
-    margin: 0 2% 0 10%;
-}
-
-div.product2{
-    float: right;
-    margin: 0 10% 0 2%;
+    width: 45%;
 }
 
 .product .product-img{
     max-width: 100%;
 }
 
-/* div.cart{
+div.cart{
     padding: 10px;
     margin: 0 10%;
-    width: 75%;
     overflow: wrap;
 }
 
+/* 
 .cart img.prod-img{
     max-width: 10px;
     height: auto;
