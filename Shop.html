@@ -4,11 +4,12 @@
         <title>Shop NotchPen</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/shop.css">
         <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/shop.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20SAns">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
         <script src="js/main.js" defer></script>
+        <script src="js/shop.js" defer></script>
     </head>
 
     <body>
@@ -43,11 +44,11 @@
         <div class="main-product clearfix">
             <div class="product-img">
                 <span class="label">Featured</span>
-                <img src="images/image-filler.png" alt="Notch Pen Product Image">
+                <img id="pen-img" src="images/image-filler.png" alt="Notch Pen Product Image">
             </div>
             <div class="product-description">
-                <h1>NotchPen</h1>
-                <p>$$$</p>
+                <h1 id="pen-prod-name">NotchPen</h1>
+                <p id="pen-price">$34.00</p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sapien ipsum, facilisis accumsan sagittis in, 
                     condimentum ut massa. Curabitur commodo quam ultrices gravida convallis. Fusce enim sem, mattis vel ligula quis, 
@@ -55,6 +56,9 @@
                     orci arcu, non egestas metus maximus id. Integer nibh felis, elementum at ornare et, pharetra in metus. 
                     Integer at consectetur dui. Phasellus lacinia vestibulum erat, quis pulvinar risus faucibus ultrices. 
                     Morbi tempus lacinia feugiat. Suspendisse suscipit tortor id ante eleifend, sit amet rhoncus nibh elementum.
+                    <br>
+                    <br>
+                    <a class="button" id="buy-pen" href="#cart">Buy Now</a>
                 </p>
             </div>
         </div>
@@ -63,13 +67,18 @@
             <div class="product product1">
                 <img class="product-img" src="images/image-filler.png" alt="Stencil Product Image">
                 <h2>Stencil</h2>
-                <p>$$$</p>
+                <p>$12.00</p>
+                <a class="button" id="buy-stencil" href="#cart">Buy Now</a>
             </div>
             <div class="product product2">
                 <img class="product-img" src="images/image-filler.png" alt="Wrist Strap Product Image">
                 <h2>Wrist Strap</h2>
-                <p>$$$</p>
+                <p>$8.00</p>
+                <a class="button" id="buy-strap" href="#cart">Buy Now</a>
             </div>
+        </div>
+        <div id="cart"> <!--shopping cart-->
+            <h1 id="cart-header">My Cart (-)</h1>  <!--need js for changing num-->
         </div>
         <footer> <!-- contact info footer -->
             
