@@ -79,7 +79,8 @@ hr{
 }
 
 div#cart{
-    margin: 100px 10%;
+    margin: 100px 0 100px 10%;
+    width: 40%;
     overflow: wrap;
 }
 
@@ -94,7 +95,7 @@ div#cart{
 
 div.cart-item{
     display: flex;
-    width: 50%;
+    width: 100%;
     height: auto;
     flex-direction: row;
     justify-content: space-between;
