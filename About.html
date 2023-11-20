@@ -61,12 +61,13 @@
         <p class="p3">"Notch: Bridging the Gap in<br>
                        Note-Taking Accessibility."</p>
         <div style="margin-top: 30px;">
-        <h2><b>Testimonies</b></h2>
+        <h2 id="testimonies"><b>Testimonies</b></h2>
          <!--<img src="images/testimoniesboxes.jpg" alt="Testimonies" width="1000" height="1500"> -->
          <!-- create divs for testimony boxes and add the stars-->
          <div id="text" class="square">
-         <img src="images/output-onlinepngtools.png" alt="star">
-         <p class="p4"><b>Laura S.</b> "NotchPen has</br>
+         <img src="images/output-onlinepngtools.png" alt="star" width="298" height="48" style="margin-left: 20%;">
+         <p class="p4" style="margin-left: 7.5%; margin-top: -0.1%;"> 
+                      "NotchPen has</br>
                        transformed my life! As a</br>
                        visually impaired student, I've</br>
                        struggled for years with note-</br>
@@ -75,10 +76,12 @@
                        take notes on any paper with</br>
                        ease. It's a game-changer, and</br>
                        I can't imagine my academic</br>
-                       journey without it."</p>
+                       journey without it."</br>
+                       <b> - Laura S. </b></p>
          </div>
          <div class="square2">
-          <p class="p4"><b>John M.</b> "I recently started using</br>
+         <img src="images/output-onlinepngtools.png" alt="star" width="298" height="48" style="margin-left: 20%;">
+          <p class="p4" style="margin-left: 7.5%; margin-top: -0.1%"> "I recently started using</br>
                            NotchPen at work, and it's been</br>
                            a fantastic addition to my</br>
                            toolkit. It's simple to use, and the</br>
@@ -86,18 +89,21 @@
                            tactile. NotchPen has made</br>
                            taking notes during meetings</br>
                            and brainstorming sessions a</br>
-                           breeze."</p>
+                           breeze."</br>
+                          <b> - John M.</b></p>
         </div>
-         <div style="float:right;" class="square3">
-         <p class="p4"><b>Sophie R.</b> "I bought NotchPen for</br>
-                          my son, who is visually</br>
-                          impaired. It's an excellent aid for</br>
-                          his schoolwork. He now takes</br>
-                          in creating his notes</br>
-                          independently, and his confidence has soared.</br>
-                          NotchPen is a wonderful tool for</br>
-                          parents and their children with</br>
-                          visual impairments."</p>
+         <div class="square3">
+         <img src="images/output-onlinepngtools.png" alt="star" width="298" height="48" style="margin-left: 20%;">
+         <p class="p4" style="margin-left: 7.5%; margin-top: -0.1%"> "I bought NotchPen for</br>
+                         my son, who is visually</br>
+                         impaired. It's an excellent aid for</br>
+                         his schoolwork. He now takes</br>
+                         in creating his notes</br>
+                         independently, and his confidence has</br>
+                         soard. NotchPen is a wonderful tool for</br>
+                         parents and their children with</br>
+                         visual impairments."</br>
+                         <b> - Sophie R.</b></p>
          </div>
 
          <p class="p3">"NotchPen is not just a pen; it's a</br>
@@ -106,8 +112,8 @@
                          impairments, guiding them</br>
                           toward a future filled with</br>
                               possibilities."</p>
-         <h2><b>Meet the Team</b></h2>
-         <img src="images/meet-the-team.png" alt="profile">
+         <h2 id="meet-the-team" style="text-align: center;"><b>Meet the Team</b></h2>
+         <img src="images/meet-the-team.png" alt="profile" class="meet" style="margin-left: 19.5%;">
          <h1><b>Contact Us.</b></h1>
          <p class="p5">
             At Notch, we're here to help and hear from you.</br>
@@ -116,35 +122,25 @@
             the following methods:</p>
             <br> <br>
     </div>
-             <p>Want clarification on anything?Ask usa question!</p>
+             <p>Want clarification on anything? Ask us a question!</p>
       <p>  Tried our product? Leave us a review! </p>    
       <form action="/page-processing-data" method="post">
-         <div>
-           <label for="name">Your name</label>
+         <div class="name">
+           <label for="name">Name</label>
              <input type="text" id="name" name="name" placeholder="Marie" required>
          </div>
 
-         <div>
-           <label for="email">e-mail</label>
+         <div class="email">
+           <label for="email">E-Mail Adress: </label>
              <input type="email" id="email" name="email" placeholder="myemailadresse@gmail.com" required>
          </div>
 
-         <div>
-           <label for="subject">What is the subject of your message ?</label>
-             <select name="subject" id="subject" required>
-               <option value="" disabled selected hidden>Select the subject of your message</option>
-               <option value="question-product">Question about product</option>
-               <option value="review">review</option>
-               <option value="other">Other...</option>
-             </select>
-          </div>
-
-          <div>
-            <label for="message">your message </label>
+          <div class="message">
+            <label for="message"> </label>
               <textarea id="message" name="message" placeholder="Hello,I contact you for...." required></textarea>
           </div>
 
-          <div>
+          <div class="send">
             <button type="submit">Send my message</button>
           </div>
      </form>
