@@ -3,76 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%20Mono">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
-    <style>
-        /* Add some basic styling for presentation purposes */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100vh;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            margin: 0;
-            cursor: pointer;
-        }
-        header nav {
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            color: black;
-            padding: 5px 10px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #ddd;
-        }
-        footer {
-            background-color: #f4f4f4;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .content {
-            text-align: center;
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-    <title>Home NotchPen</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">  
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <script src="js/home.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- Clicking on the title will take you back to the index page -->
-        <h1><a href="Index.html" style="text-decoration: none; color: black;">NotchPen</a></h1>
-        <nav>
-            <a href="Index.html">Home</a>
-            <a href="FAQ.html">FAQ</a>
-            <a href="About.html">About</a>
-            <a href="Shop.html">Shop</a>
-        </nav>
+    <header id="header-logo">
+        <img src="images/logo-copy.png" alt="logo">
     </header>
-
-    <div class="content">
-        <h2>Welcome to NotchPen</h2>
+    <nav id="nav" class="fixed-element centered-nav">
+        <img id="logo" class="hidden" src="images/logo.png" alt="logo">
+        <ul>
+            <li><a class="final-link" href="FAQ.html">FAQ</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li class="dropdown">
+                <a class="dropbtn" href="About.html">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="About.html#our-objective">Our Objective</a></li>
+                    <li class="submenu">
+                        <span class="dropdown-subheading">About NotchPen</span>
+                        <ul class="article-list">
+                            <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                            <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html#testimonies">Testimonies</a></li>
+                    <li><a href="About.html#meet-the-team">Meet the Team</a></li>
+                    <li><a href="About.html#contact-us">Contact Us</a></li>
+                </ul>
+            </li>
+            <li><a class="current" href="Index.html">Home</a></li> 
+        </ul>
+    </nav>
+    <div class="main">
+        <h1>Why Our Pen Stands Out: Revolutionizing Writing for the Visually Impaired</h1>
+        <p>In a world where writing tools have largely remained unchanged, our revolutionary pen emerges as a beacon of innovation, especially designed for the visually impaired. </p>
+        <p>Unlike traditional pens, our product doesn’t just write; it brings words to life in a tactile form, making it a groundbreaking tool in accessibility.</p> 
+        <img src="style_guidelines_element_templates.png" width="1000" height="600">
+        <h1>Why Choose Our Pen?</h1>
+        <h2>Enhanced Accessibility</h2>
+        <p>Traditional braille writing methods require puncturing paper, which can be limiting to customers. Our pen, simplifies this process, allowing users to 'print' braille smoothly and effortlessly.</p>
+        <h2>Innovative Design</h2>
+        <p>Designed with the user in mind, our pen is ergonomic, easy to handle, and requires minimal pressure, making it suitable for all ages and abilities.</p>
+        <h2>Eco-Friendly and Cost-Effective</h2>
+        <p>Unlike conventional braille writers that necessitate specific paper types, our pen works with a special but more affordable paper, reducing long-term costs and environmental impact.</p>
+        <h2>Education and Independence</h2>
+        <p>This pen isn’t just a tool for writing; It enables users to learn, create, and communicate more effectively, breaking down barriers faced by the visually impaired community.</p>
+        <h1>Join Us in Embracing Inclusivity!</h1>
+        <p>By choosing our pen, you're not just buying a writing instrument; you're supporting a movement towards greater inclusivity and empowerment for the visually impaired. </p> 
+        <p>Experience the transformation in how braille is written and perceived. Be a part of this revolutionary journey with us.</p>
     </div>
-
-    <footer>
-        © 2023 Shop NotchPen. All Rights Reserved.
-    </footer>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"This innovative pen has transformed the way I write and read braille. It's easy to use and incredibly effective."</p>
+            <p>- Zabi, Teacher</p>
+        </div>
+        <div class="testimonial">
+            <p>"As someone who is visually impaired, this pen has given me a newfound sense of independence in my daily life."</p>
+            <p>- Rayan, Student</p>
+        </div>
+        <div class="testimonial">
+            <p>"Absolutely a game-changer for braille users. The quality and ease of use are unmatched."</p>
+            <p>- Moustapha, Writer</p>
+        </div>
+    </div>
+    <a href="javascript:void(0);" id="backToTopButton" title="Back to Top" style="display: none;">↑</a>
 </body>
 </html>
