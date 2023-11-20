@@ -50,7 +50,7 @@
                 <h1 id="pen-prod-name">NotchPen</h1>
                 <p id="pen-price">$34.00</p>
                 <p>
-                    Say goodbye to making holes in paper!
+                    Say goodbye to poking holes in paper!
                     <br><br>
                     NotchPen is designed to write just like an ink pen. Wax is melted in an internal chamber
                     and dispensed at an even rate when the button is pressed.
@@ -85,8 +85,19 @@
             </div>
         </div>
         <hr>
-        <div id="cart"> <!--shopping cart-->
-            <h1 id="cart-header">My Cart (-)</h1>  <!--need js for changing num-->
+        <div class="cart-section">
+            <div id="cart"> <!--shopping cart-->
+                <h1 id="cart-header">My Cart (-)</h1>  <!--need js for changing num-->
+            </div>
+            <div id="order-summary">
+                <h3>Order Summary</h3>
+                <div class="row"> <h4>Subtotal</h4> <p id="subtotal">$0.00</p> </div>
+                <div class="row"> <h5>Shipping</h5> <p id="shipping">$0.00</p> </div>
+                <div class="row"> <h5>Tax</h5> <p id="tax">$0.00</p> </div>
+                <div class="row"> <h4>Estimated Total</h4> <p id="total">$0.00</p> </div>
+                <br><br>
+                <a class="button" href="#">Proceed to Checkout</a>
+            </div>
         </div>
         <footer> <!-- contact info footer -->
             

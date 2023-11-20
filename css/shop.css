@@ -114,3 +114,26 @@ div.cart-item{
     width: 20%;
     text-align: left;
 }
+
+div.cart-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+} 
+
+div#order-summary{
+    margin: 100px 10% 100px 0;
+    width: 30%;
+    overflow: wrap;
+}
+
+#order-summary div.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#order-summary h3, #order-summary h4, #order-summary h5{
+    display: inline-block;
+}

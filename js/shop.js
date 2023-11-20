@@ -1,18 +1,5 @@
 function addProduct(elementID, flag){
-    const titleElement = document.getElementById("cart-header");
-    let title = titleElement.innerHTML;
-    
-    let firstBrac = title.indexOf("(");
-    let secBrac = title.indexOf(")");
-    let num = title.slice(firstBrac + 1, secBrac);
-
-    if (num == "-"){
-        num = 1;
-    } else {
-        num = parseInt(num) + 1;
-    }
-
-    titleElement.innerHTML = title.slice(0, firstBrac + 1) + num + title.slice(secBrac)
+    incrementCount();
 
     const imgPath = document.getElementById(elementID + "-img").src;
     const productName = document.getElementById(elementID + "-prod-name").innerHTML;
@@ -20,7 +7,7 @@ function addProduct(elementID, flag){
 
     const cart = document.getElementById("cart");
 
-    if(!flag){  // the product hasn't been added yet so generate a new one
+    if (!flag){ // the product hasn't been added yet so generate a new one
         let options = "\t<option selected>1</option>";
         for (let i = 2; i <= 50; i++){
             options += ("\t<option>" + i + "</option>\n");
@@ -34,22 +21,93 @@ function addProduct(elementID, flag){
         + "\t<p class=\"price\" id=\"cart-" + elementID + "-price\">" + price + "</p>\n"
         + "</div>";
 
+        document.getElementById("cart").dispatchEvent(priceChange);
+        document.getElementById("cart-" + elementID + "-num").addEventListener("change", function(){handlePrice(elementID);});
+
     } else {
         const selectElem = document.getElementById("cart-" + elementID + "-num")
-        const currentSel = selectElem.selectedIndex
-        let num = parseInt(selectElem.options[currentSel].text) + 1;
-        selectElem.options[currentSel + 1].selected = true;
-
-        let totalPrice = parseFloat(price.slice(price.indexOf("$") + 1)) * num;
-        const priceElem = document.getElementById("cart-" + elementID + "-price")
-        priceElem.innerHTML = "$" + totalPrice + ".00";
+        selectElem.options[selectElem.selectedIndex + 1].selected = true;  //this doesn't work fully
+        handlePrice(elementID);
     }
 }
 
-let flagPen = false;
-let flagStencil = false;
-let flagStrap = false;
+function incrementCount(step = 1){
+    const titleElement = document.getElementById("cart-header");
+    let title = titleElement.innerHTML;
+    
+    let firstBrac = title.indexOf("(");
+    let secBrac = title.indexOf(")");
+    let num = title.slice(firstBrac + 1, secBrac);
 
-document.getElementById("buy-pen").addEventListener("click", function(){addProduct("pen", flagPen); flagPen = true;});
-document.getElementById("buy-stencil").addEventListener("click", function(){addProduct("stencil", flagStencil); flagStencil = true;});
-document.getElementById("buy-strap").addEventListener("click", function(){addProduct("strap", flagStrap); flagStrap = true;});
+    if (num == "-"){
+        num = step;
+    } else {
+        num = parseInt(num) + step;
+    }
+
+    titleElement.innerHTML = title.slice(0, firstBrac + 1) + num + title.slice(secBrac)
+}
+
+function handlePrice(elementID){
+    const Price = parseFloat(document.getElementById(elementID + "-price").innerHTML.slice(1));
+    
+    const selectElem = document.getElementById("cart-" + elementID + "-num")
+    let num = selectElem.selectedIndex + 1;
+    let totalPrice = Price * num;
+    const priceElem = document.getElementById("cart-" + elementID + "-price")
+    priceElem.innerHTML = "$" + totalPrice + ".00";
+
+    document.getElementById("cart").dispatchEvent(priceChange);
+}
+
+function changeSummary(flagPen, flagStencil, flagStrap){
+    const subtotalElem = document.getElementById("subtotal");
+    const shippingElem = document.getElementById("shipping");
+    const taxElem = document.getElementById("tax");
+    const totalElem = document.getElementById("total");
+
+    let pen = flagPen ? (parseFloat(document.getElementById("cart-pen-price").innerHTML.slice(1))) : 0;
+
+    let stencil = flagStencil ? (parseFloat(document.getElementById("cart-stencil-price").innerHTML.slice(1))) : 0;
+
+    let strap = flagStrap ? (parseFloat(document.getElementById("cart-strap-price").innerHTML.slice(1))) : 0;
+
+    let newST = pen + stencil + strap;
+    subtotalElem.innerHTML = "$" + newST + ".00";
+    
+    shippingElem.innerHTML = (newST < 100) ? "TBD" : "FREE";
+
+    let tax = Math.round(100 * (newST * 0.13)) / 100
+    let numDeci = tax.toString().slice(tax.toString().indexOf(".") + 1).length;
+    taxElem.innerHTML = (numDeci == 2) ? ("$" + tax) : ((numDeci == 1) ? "$" + tax + "0" : "$" + tax + ".00");
+
+    let total = Math.round(100 * (newST + tax)) / 100;
+    numDeci = total.toString().slice(total.toString().indexOf(".") + 1).length;
+    totalElem.innerHTML = (numDeci == 2) ? ("$" + total) : ((numDeci == 1) ? "$" + total + "0" : "$" + total + ".00");
+}
+
+const priceChange = new Event("priceChange", {
+    bubbles: true,
+    cancelable: true,
+    composed: false
+});
+
+let flagPen, flagStencil, flagStrap, penExists, stencilExists, strapExists = false;
+
+document.getElementById("buy-pen").addEventListener("click", function(){
+    penExists = true; 
+    addProduct("pen", flagPen); 
+    flagPen = true;
+});
+document.getElementById("buy-stencil").addEventListener("click", function(){
+    stencilExists = true; 
+    addProduct("stencil", flagStencil); 
+    flagStencil = true;
+});
+document.getElementById("buy-strap").addEventListener("click", function(){
+    strapExists = true;
+    addProduct("strap", flagStrap); 
+    flagStrap = true;
+});
+
+document.getElementById("cart").addEventListener("priceChange", function(){changeSummary(penExists, stencilExists, strapExists);});
