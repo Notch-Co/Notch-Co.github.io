@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="css/main-style.css">
-
-    <style>
+    <link rel="stylesheet" href="css/faq.css">
+    
+  <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         .blue-container {
-            background-color: #;
+            /* background-color: #; */
             padding: 20px;
             text-align: center;
-            margin-top: 1px;
+            margin-top: 45px;
             border-radius: 5px;
         }
 
@@ -41,64 +50,12 @@
         .search-form button {
             padding: 8px 16px;
         }
-    </style>
-</head>
 
-
-<body>
-
-    <header id="header-logo">
-        <img src="images/logo-copy.png" alt="logo">
-    </header>
-    <nav id="nav" class="fixed-element centered-nav">
-        <img id="logo" class="hidden" src="images/logo.png" alt="logo">
-        <ul>
-            <li><a class="final-link" href="faq.html">FAQ</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li class="dropdown">
-                <a class="dropbtn" href="about.html">About</a>
-                <ul class="dropdown-content">
-                    <!-- When writing html for about page, add the text after the # as an id on the respective header-->
-                    <li><a href="about.html#our-objective">Our Objective</a></li>
-                    <li class="submenu">
-                        <span class="dropdown-subheading">About NotchPen</span>
-                        <ul class="article-list">
-                            <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
-                            <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html#testimonies">Testimonies</a></li>
-                    <li><a href="about.html#meet-the-team">Meet the Team</a></li>
-                    <li><a href="about.html#contact-us">Contact Us</a></li>
-                </ul>
-            </li>
-            <li><a class="current" href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
-        </ul>
-    </nav>
-
-    <div class="blue-container">
-        <h1>How can we help you?</h1>
-        <div class="search-form">
-            <form action="/search" method="get">
-                <input type="text" id="search" name="q" placeholder="Search keywords or phrases...">
-                <button type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-<h2>Frequently Asked Questions</h2>
-</body>
-</html>
-
-
-    <style>
         h2 {
             font-size: 17px; /* Adjust the font size as needed */
             color: #358285; /* Set the color to match the header */
         }
-    </style>
 
-
-    <style>
         .container {
             text-align: center;
         }
@@ -137,8 +94,128 @@
         .toggle-checkbox:checked + .content {
             display: block;
         }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #F0F7FF;
+            color: #A4B8C4;
+            padding: 20px 20px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .accordion {
+            background-color: #358285;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #F0F8FF
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+        }
+
+        .show{
+          display: block;
+        }
+
     </style>
+
+    <script defer src="js/faq.js"></script>
 </head>
+
+
+<body>
+
+    <header id="header-logo">
+        <img src="images/logo-copy.png" alt="logo">
+    </header>
+    <nav id="nav" class="fixed-element centered-nav">
+        <img id="logo" class="hidden" src="images/logo.png" alt="logo">
+        <ul>
+            <li><a class="final-link" href="faq.html">FAQ</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li class="dropdown">
+                <a class="dropbtn" href="about.html">About</a>
+                <ul class="dropdown-content">
+                    <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                    <li><a href="about.html#our-objective">Our Objective</a></li>
+                    <li class="submenu">
+                        <span class="dropdown-subheading">About NotchPen</span>
+                        <ul class="article-list">
+                            <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                            <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html#testimonies">Testimonies</a></li>
+                    <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                    <li><a href="about.html#contact-us">Contact Us</a></li>
+                </ul>
+            </li>
+            <li><a class="current" href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+        </ul>
+    </nav>
+
+    <div class="blue-container">
+        <h1>How can we help you?</h1>
+        <div class="search-form">
+          <form action="/search" method="get">
+            <input type="text" id="search" name="q" placeholder="Search keywords or phrases..."> <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="center-container"></div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="button-container"></div><a class="button" href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Shipping?</a> <a class="button" href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Refunds/Returns?</a>
+      <div>
+        <a class="button" href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">What are your payment options?</a> <a class="button" href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">How long will my order take?</a>
+      </div>
+      <button id="refund-button" class="accordion">Refunds/Returns?</button>
+      <div class="panel" id="refund-box">
+        <p>Yes we offer refunds</p>
+        <p>more words</p>
+    
+        <button id="shipping-button" class="accordion">Shipping?</button>
+      <div class="panel" id="refund-box">
+        <p>Yes we offer refunds</p>
+        <p>more words</p>
+    
+      </div>
+      <!-- <script>
+        const acc = document.getElementsByClassName("accordion");
+        
+        for (let i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+      </script> -->
 
 <a class="button" href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Shipping? </a>
 
