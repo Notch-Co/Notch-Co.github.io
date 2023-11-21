@@ -1,13 +1,15 @@
 .main{
-    margin-top: 5%;
+    margin: 5% 10% auto 10%;
     text-align: center;
 }
+
 .testimonial-container {
+    margin: auto 10%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 20px;
 }
+
 .testimonial {
     background-color: #DFF3FF;
     border: 1px solid #ddd;
@@ -37,6 +39,45 @@
     background-color: #246365;
 }
 
+div.main-idea{
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    
+.heading h1{
+    display: inline;
+}
+
+.second-color-heading{
+    color: #246365;
+}
+
+.main-idea .heading{
+    margin-bottom: 50px;
+}
+
+.main-idea p{
+    width: 67%;
+    text-align: justify;
+}
+
+#why-pen{
+    margin: 100px auto 50px auto;
+}
+
+div.textbox{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox p{
+    width: 67%;
+    text-align: justify;
+}
     
