@@ -1,4 +1,4 @@
-function addProduct(elementID, flag){
+function addProduct(elementID, flag, flagPen, flagStencil, flagStrap){
     incrementCount();
 
     const imgPath = document.getElementById(elementID + "-img").src;
@@ -22,24 +22,56 @@ function addProduct(elementID, flag){
         + "</div>";
 
         document.getElementById("cart").dispatchEvent(priceChange);
-        document.getElementById("cart-" + elementID + "-num").addEventListener("change", function(){handlePrice(elementID);});
-
     } else {
         const selectElem = document.getElementById("cart-" + elementID + "-num")
         selectElem.options[selectElem.selectedIndex + 1].selected = true;  //this doesn't work fully
         handlePrice(elementID);
     }
+
+    if (flagPen){
+        document.getElementById("cart-pen-num").addEventListener("change", function(){
+            handlePrice("pen");
+            let numPen = document.getElementById("cart-pen-num").selectedIndex + 1;
+            let numSten = flagStencil ? (document.getElementById("cart-stencil-num").selectedIndex + 1) : 0;
+            let numStrap = flagStrap ? (document.getElementById("cart-strap-num").selectedIndex + 1) : 0;
+            let num = numPen + numSten + numStrap;
+            incrementCount(num, true);
+        });
+    }
+
+    if (flagStencil){
+        document.getElementById("cart-stencil-num").addEventListener("change", function(){
+            handlePrice("stencil");
+            let numPen = flagPen ? (document.getElementById("cart-pen-num").selectedIndex + 1) : 0;
+            let numSten = document.getElementById("cart-stencil-num").selectedIndex + 1;
+            let numStrap = flagStrap ? (document.getElementById("cart-strap-num").selectedIndex + 1) : 0;
+            let num = numPen + numSten + numStrap;
+            incrementCount(num, true);
+        });
+    }
+
+    if (flagStrap){
+        document.getElementById("cart-strap-num").addEventListener("change", function(){
+            handlePrice("strap");
+            let numPen = flagPen ? (document.getElementById("cart-pen-num").selectedIndex + 1) : 0;
+            let numSten = flagStencil ? (document.getElementById("cart-stencil-num").selectedIndex + 1) : 0;
+            let numStrap = document.getElementById("cart-strap-num").selectedIndex + 1;
+            let num = numPen + numSten + numStrap;
+            incrementCount(num, true);
+        });
+    }
 }
 
-function incrementCount(step = 1){
+function incrementCount(step = 1, set = false){
     const titleElement = document.getElementById("cart-header");
     let title = titleElement.innerHTML;
     
     let firstBrac = title.indexOf("(");
     let secBrac = title.indexOf(")");
-    let num = title.slice(firstBrac + 1, secBrac);
 
-    if (num == "-"){
+    let num = title.slice(firstBrac + 1, secBrac);
+    
+    if ((num == "-") || set){
         num = step;
     } else {
         num = parseInt(num) + step;
@@ -96,17 +128,17 @@ let flagPen, flagStencil, flagStrap, penExists, stencilExists, strapExists = fal
 
 document.getElementById("buy-pen").addEventListener("click", function(){
     penExists = true; 
-    addProduct("pen", flagPen); 
+    addProduct("pen", flagPen, penExists, stencilExists, strapExists); 
     flagPen = true;
 });
 document.getElementById("buy-stencil").addEventListener("click", function(){
     stencilExists = true; 
-    addProduct("stencil", flagStencil); 
+    addProduct("stencil", flagStencil, penExists, stencilExists, strapExists); 
     flagStencil = true;
 });
 document.getElementById("buy-strap").addEventListener("click", function(){
     strapExists = true;
-    addProduct("strap", flagStrap); 
+    addProduct("strap", flagStrap, penExists, stencilExists, strapExists); 
     flagStrap = true;
 });
 
