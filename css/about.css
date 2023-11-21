@@ -56,32 +56,62 @@ h6 {
     font-size: 25px;
 }
 
+.p6 {
+    background-color: #ffefe0;
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+
 .square{
-    height: 350px;
-    width: 350px;
-    display: inline;
-    position: absolute;
+    height: 400px;
+    width: 32%;
+    margin: 10px;
     background-color: #dff3ff;
-    z-index: 0;
+    display: block;
+    float: left;
 }
 
 .square2{
-    height: 350px;
-    width: 350px;
-    margin: auto;
+    height: 400px;
+    width: 32%;
+    margin: 10px auto;
     background-color: #dff3ff;
-    position: relative;
+    display: block;
+    float: left;
 }
 
 .square3{
-    width: 350px;
-    height: 350px;
-    margin: auto;
+    width: 32%;
+    height: 400px;
+    margin: 10px;
     background-color: #dff3ff;
-    position: relative;
+    display: block;
+    float: left;
 }
 
 .square img{
-    position: absolute;
-    z-index: 3;
+    position: relative;
+}
+
+h2#testimonies{
+    padding-top: 100px;
+    margin-bottom: 10px;
+}
+
+meet{
+    align-self: center;
+}
+
+.name{
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.box {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 50px;
 }
