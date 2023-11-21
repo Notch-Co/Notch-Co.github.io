@@ -10,6 +10,7 @@ div.main-product{
     float: left;
     margin: 0 2% 0 10%;
     position: relative;
+    background-color: #FFEBD9;
 }
 
 .main-product .product-img img{
@@ -59,20 +60,82 @@ div.gallery{
     margin-top: 100px;
 }
 
+div.product-gallery{
+    margin: auto 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 div.product{
-    width: 35%;
-}
-
-div.product1{
-    float: left;
-    margin: 0 2% 0 10%;
-}
-
-div.product2{
-    float: right;
-    margin: 0 10% 0 2%;
+    width: 45%;
 }
 
 .product .product-img{
     max-width: 100%;
+    background-color: #FFEBD9;
+}
+
+hr{
+    margin-top: 100px;
+}
+
+div#cart{
+    margin: 100px 0 100px 10%;
+    width: 40%;
+    overflow: wrap;
+}
+
+#cart img.prod-img{
+    max-width: 10%;
+    height: auto;
+} 
+
+#cart h1{
+    font-size: 40pt;
+}
+
+div.cart-item{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item h6{
+    font-size: 14pt;
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+}
+
+.cart-item p.price{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+}
+
+div.cart-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+} 
+
+div#order-summary{
+    margin: 100px 10% 100px 0;
+    width: 30%;
+    overflow: wrap;
+}
+
+#order-summary div.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#order-summary h3, #order-summary h4, #order-summary h5{
+    display: inline-block;
 }

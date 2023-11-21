@@ -42,6 +42,118 @@ h6 {
     text-align: center;
 }
 
+.container{
+   background:#ffdab9;
+   border-radius:5px;
+   box-shadow: 0 2px 6px rgba(0,0,0.5);
+   width:400px;
+   max-width:100%;
+ 
+
+}
+.header{
+   background:#f7f7f7;
+   border-bottom: 1px solid#fffdfa;
+   padding: 20px 40px;       
+        
+}
+.header h4{
+   margin: 0;
+   text-align: center;
+   font-style: italic;
+           
+}
+.form{
+   padding: 30px 40px;
+}
+.form-control{
+   margin-bottom:10px;
+   padding-bottom: 20px;
+   position: relative;
+}
+.form-control label{
+   display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control select {
+   width: 100%;
+   padding:8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   line-height: 16px;
+   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ }
+.form-option {
+   padding: 8px;
+ }
+ 
+
+.form-option:hover {
+   background-color: #f7f7f7;
+ }
+textarea{
+   width:100%;
+   border:3px solid #ffdab9;
+   padding:10px;
+   margin-bottom:25px;
+   height:100px;
+   resize:none
+}
+
+.form-control input{
+   border: 2px solid #ffdab9;
+   border-radius: 4px;
+   display:block;
+   font-family: Arimo;
+   font-size: 14px;
+   width: 100%;
+   height: 40px;
+   padding-left: 10px;
+}
+
+.form-control i{
+   position: absolute;
+   top: 33px;
+   right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+   position: absolute;
+   bottom:0;
+   left:0;
+   visibility: hidden;
+}
+.button{
+   background:#ffdab9;
+   border: 2px solid #ffdab9;
+    color: #fff;
+   font-family: inherit;
+   border-radius:  4px;
+   display: block;
+   padding: 10px;
+   font-size: 16px;
+   width: 100%;
+   cursor : pointer
+}
+.form-control.success input{
+   border-color: #ffdab9;
+}
+.form-control.error input{
+   border-color: #e74c3c;
+}
+.form-control.success i.fa-check-circle{
+   color:  #ffdab9;
+   visibility: visible;                          
+}
+.form-control.error i.fa-exclamation{ 
+   color:#e74c3c;
+   visibility: visible;                          
+}
+.form-control.error small{
+   color:#e74c3c;
+   visibility: visible;
+}
+
 .p4 {
     color: #393F4A;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;

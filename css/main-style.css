@@ -86,13 +86,12 @@ nav ul{
     padding: 0;
 }
 
-nav.centered-nav > ul{
-    max-width: 33%;
-    margin: 0 auto;
+nav.centered-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
-/*need to fix behavious of nav in response to changing window size
-can probably be fixed by using flexbox*/
 
 nav li, .dropdown-content{display: inline;}
 

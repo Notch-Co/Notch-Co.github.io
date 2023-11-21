@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop NotchPen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20SAns">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <script src="js/main.js" defer></script>
+        <script src="js/shop.js" defer></script>
+    </head>
+
+    <body>
+        <header id="header-logo">
+            <img src="images/logo-copy.PNG" alt="logo">
+        </header>
+        <nav id="nav" class="fixed-element centered-nav">
+            <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
+            <ul>
+                <li><a class="final-link" href="faq.html">FAQ</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="about.html">About</a>
+                    <ul class="dropdown-content">
+                        <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                        <li><a href="about.html#our-objective">Our Objective</a></li>
+                        <li class="submenu">
+                            <span class="dropdown-subheading">About NotchPen</span>
+                            <ul class="article-list">
+                                <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                                <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html#testimonies">Testimonies</a></li>
+                        <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                        <li><a href="about.html#contact-us">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a class="current" href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+            </ul>
+        </nav>
+        <div class="main-product clearfix">
+            <div class="product-img">
+                <span class="label">Featured</span>
+                <img id="pen-img" src="images/notchpen.PNG" alt="Notch Pen Product Image">
+            </div>
+            <div class="product-description">
+                <h1 id="pen-prod-name">NotchPen</h1>
+                <p id="pen-price">$34.00</p>
+                <p>
+                    Say goodbye to poking holes in paper!
+                    <br><br>
+                    NotchPen is designed to write just like an ink pen. Wax is melted in an internal chamber
+                    and dispensed at an even rate when the button is pressed.
+                    <br><br>
+                    <i>
+                        Weight: 250 grams
+                        <br>
+                        Dimensions: 5" (l) x 0.6" (d)
+                        <br>
+                        Material: Brass
+                    </i>
+                    <br><br>
+                    <a class="button" id="buy-pen" href="#cart">Buy Now</a>
+                </p>
+            </div>
+        </div>
+        <div class="gallery"> <!-- container for "other products"-->
+            <h1>Accessories</h1>
+            <div class="product-gallery">
+                <div class="product">
+                    <img class="product-img" id="stencil-img" src="images/stencil.PNG" alt="Stencil Product Image">
+                    <h2 id="stencil-prod-name">Stencil</h2>
+                    <p id="stencil-price">$12.00</p>
+                    <a class="button" id="buy-stencil" href="#cart">Buy Now</a>
+                </div>
+                <div class="product">
+                    <img class="product-img" id="strap-img" src="images/wrist-strap.PNG" alt="Wrist Strap Product Image">
+                    <h2 id="strap-prod-name">Wrist Strap</h2>
+                    <p id="strap-price">$8.00</p>
+                    <a class="button" id="buy-strap" href="#cart">Buy Now</a>
+                </div> 
+            </div>
+        </div>
+        <hr>
+        <div class="cart-section">
+            <div id="cart"> <!--shopping cart-->
+                <h1 id="cart-header">My Cart (-)</h1>  <!--need js for changing num-->
+            </div>
+            <div id="order-summary">
+                <h3>Order Summary</h3>
+                <div class="row"> <h4>Subtotal</h4> <p id="subtotal">$0.00</p> </div>
+                <div class="row"> <h5>Shipping</h5> <p id="shipping">$0.00</p> </div>
+                <div class="row"> <h5>Tax</h5> <p id="tax">$0.00</p> </div>
+                <div class="row"> <h4>Estimated Total</h4> <p id="total">$0.00</p> </div>
+                <br><br>
+                <a class="button" href="#">Proceed to Checkout</a>
+            </div>
+        </div>
+        <footer> <!-- contact info footer -->
+            
+        </footer>
+    </body>
+</html>
