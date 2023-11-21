@@ -99,7 +99,7 @@ h2#testimonies{
     margin-bottom: 10px;
 }
 
-meet{
+.meet{
     align-self: center;
 }
 
@@ -114,4 +114,12 @@ meet{
     margin-left: 10px;
     margin-top: 10px;
     padding: 50px;
+}
+
+.team-box{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
