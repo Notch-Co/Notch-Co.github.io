@@ -292,7 +292,7 @@ h2#testimonies{
 }
 
 .team-box{
-    height: 100vh;
+    height: calc(100vh - 54px);
     display: flex;
     flex-direction: column;
     justify-content: center;
