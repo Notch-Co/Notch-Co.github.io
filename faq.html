@@ -249,34 +249,38 @@
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <header id="header-logo">
-    <img src="images/logo-copy.PNG" alt="logo">
-</header>
-<nav id="nav" class="fixed-element centered-nav">
-    <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
-    <ul>
-        <li><a class="final-link current" href="faq.html">FAQ</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li class="dropdown">
-            <a class="dropbtn" href="about.html">About</a>
-            <ul class="dropdown-content">
-                <!-- When writing html for about page, add the text after the # as an id on the respective header-->
-                <li><a href="about.html#our-objective">Our Objective</a></li>
-                <li class="submenu">
-                    <span class="dropdown-subheading">About NotchPen</span>
-                    <ul class="article-list">
-                        <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
-                        <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html#testimonies">Testimonies</a></li>
-                <li><a href="about.html#meet-the-team">Meet the Team</a></li>
-                <li><a href="about.html#contact-us">Contact Us</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
-    </ul>
-</nav>
+  <header>
+    <img id="header-logo" src="images/logo-copy.PNG" alt="logo">
+  </header>
+  <div class="icon-container">
+      <img class="icon" id="menu-icon" src="images/menu-icon.png" alt="three line icon">
+      <a href="index.html"><img  class="icon" id="home-icon" src="images/home-icon.png" alt="home icon"></a>
+  </div>
+  <nav id="nav" class="fixed-element centered-nav">
+      <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
+      <ul>
+          <li><a class="final-link current" href="faq.html">FAQ</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li class="dropdown">
+              <a class="dropbtn" href="about.html">About</a>
+              <ul class="dropdown-content">
+                  <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                  <li><a href="about.html#our-objective">Our Objective</a></li>
+                  <li class="submenu">
+                      <span class="dropdown-subheading">About NotchPen</span>
+                      <ul class="article-list">
+                          <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                          <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="about.html#testimonies">Testimonies</a></li>
+                  <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                  <li><a href="about.html#contact-us">Contact Us</a></li>
+              </ul>
+          </li>
+          <li><a href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+      </ul>
+  </nav>
 
   <div class="blue-container">
     <h1>How can we help you?</h1>
