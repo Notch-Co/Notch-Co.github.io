@@ -1,22 +1,13 @@
-/* body, html {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 .blue-container {
-    /* background-color: #; */
     padding: 20px;
     text-align: center;
     margin-top: 45px;
     border-radius: 5px;
 }
 
-
 .blue-container h1 {
     color: #393F4A;
 }
-
 
 .button-container {
     display: flex;
@@ -62,7 +53,6 @@ h2 {
     text-align: center;
 }
 
-
 .button-label {
     background-color: #F0F7FF;
     color: #A4B8C4;
@@ -76,11 +66,9 @@ h2 {
     margin: 0 auto;
 }
 
-
 .toggle-checkbox {
     display: none;
 }
-
 
 .content {
     display: none;
@@ -91,7 +79,6 @@ h2 {
     width: 300px;
     margin: 0 auto;
 }
-
 
 .toggle-checkbox:checked + .content {
     display: block;
@@ -126,13 +113,30 @@ h2 {
     margin: auto 10%;
 }
 
-/* .panel p{
-    display: block;
-    width: 100%;
-} */
-
 /* Issue: p elements do not take up full div */
 
 .show{
     display: block;
+}
+
+.header{
+    margin: 100px 10% 50px 10%;
+}
+
+/* specifying behaviour when on phone size screen */
+@media screen and (max-width: 600px){
+    /* the search word is no longer inside the button
+    but it looks cool so will not fix */
+    .accordion{
+        margin: 20px 5%;
+        width: 90%;
+    }
+
+    .panel{
+        margin: auto 5%;
+    }
+
+    .header{
+        margin: 100px 5% 20px 5%;
+    }
 }
