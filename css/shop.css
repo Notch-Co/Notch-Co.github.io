@@ -177,13 +177,13 @@ div#order-summary{
     }
 
     div#cart{
-        margin: 100px 5%;
+        margin: 100px 5% 50px 5%;
         width: 90%;
         overflow: wrap;
     }
 
     div#order-summary{
-        margin: 100px 5%;
+        margin: 50px 5% 100px 5%;
         width: 90%;
         overflow: wrap;
     }
