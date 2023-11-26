@@ -1,6 +1,6 @@
 function displaySmallNav(){
     const nav = document.getElementById("nav");
-    nav.className = nav.className.replace("centered-nav", "");
+    nav.className = nav.className.replace(" centered-nav", "");
     const logo = document.getElementById("logo");
     logo.className = logo.className.replace("hidden", "");
 }
@@ -13,6 +13,15 @@ function displayCenteredNav(){
     const logo = document.getElementById("logo");
     if (!logo.className.includes("hidden")){
         logo.className = logo.className + " hidden";
+    }
+}
+
+function toggleCollapsedNav(){
+    const nav = document.getElementById("nav");
+    if (!nav.className.includes("collapsed-nav")){
+        nav.className += " collapsed-nav";
+    } else {
+        nav.className = nav.className.replace(" collapsed-nav", "")
     }
 }
 
@@ -30,3 +39,5 @@ const observer = new IntersectionObserver(function(entries){
 }, options);
 
 observer.observe(document.getElementById("header-logo"));
+
+document.getElementById("menu-icon").addEventListener("click", toggleCollapsedNav);
