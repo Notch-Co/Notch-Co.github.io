@@ -7,282 +7,51 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM%20Sans">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/faq.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.PNG">
-  <style>
-        /* body, html {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        } */
-        .blue-container {
-            /* background-color: #; */
-            padding: 20px;
-            text-align: center;
-            margin-top: 45px;
-            border-radius: 5px;
-        }
-
-
-        .blue-container h1 {
-            color: #393F4A;
-        }
-
-
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .button {
-            background-color: #F0F7FF;
-            color: #A4B8C4;
-            padding: 20px 20px;
-            text-align: center;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 20px;
-            margin: 10px;
-        }
-
-        /* Style the search bar and button */
-        .search-form {
-            margin-top: 10px;
-        }
-
-        .search-form input[type="text"] {
-            padding: 8px;
-            width: 200px;
-        }
-
-        .search-form button {
-            padding: 8px 16px;
-        }
-
-        h2 {
-            font-size: 17px; /* Adjust the font size as needed */
-            color: #358285; /* Set the color to match the header */
-            text-align: center;
-            margin: 20px 0;
-       }
-
-        .container {
-            text-align: center;
-        }
-
-
-        .button-label {
-            background-color: #F0F7FF;
-            color: #A4B8C4;
-            padding: 15px 20px;
-            text-align: center;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 10px 10px 0 0;
-            width: 300px;
-            display: block;
-            margin: 0 auto;
-        }
-
-
-        .toggle-checkbox {
-            display: none;
-        }
-
-
-        .content {
-            display: none;
-            background-color: #F0F8FF;
-            padding: 20px;
-            border-radius: 0 0 10px 10px;
-            text-align: center;
-            width: 300px;
-            margin: 0 auto;
-        }
-
-
-        .toggle-checkbox:checked + .content {
-            display: block;
-        }
-
-        .accordion {
-            background-color: #358285;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 80%;
-            text-align: left;
-            border: none;
-            outline: none;
-            transition: 0.4s;
-            font-family: Poppins;
-            font-size: 16px;
-            margin: 20px 10%;
-        }
-
-        .active, .accordion:hover {
-            background-color: #F0F8FF;
-            color: #393F4A;
-            font-size: 16px;
-            font-family: Poppins;
-        }
-
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            display: none;
-            margin: auto 10%;
-        }
-
-        /* .panel p{
-          display: block;
-          width: 100%;
-        } */
-
-        /* Issue: p elements do not take up full div */
-
-        .show{
-          display: block;
-        }
-
-        .form{
-          padding: 30px 40px;
-          margin: auto 10%;
-        }
-
-        .form-control{
-          margin-bottom:10px;
-          padding-bottom: 20px;
-          position: relative;
-        }
-        
-        .form-control label{
-          display: inline-block;
-          margin-bottom: 5px;
-        }
-
-        .form-control select {
-          width: 100%;
-          padding:8px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          line-height: 16px;
-          transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        }    
-        .form-option {
-          padding: 8px;
-        }
- 
-
-        .form-option:hover {
-           background-color: #f7f7f7;
-          }
-        .textarea {
-           width:100%;
-           border:3px solid #ffdab9;
-           padding:10px;
-           margin-bottom:25px;
-           height:100px;
-           resize:none
-          }
-
-        .form-control input{
-          border: 2px solid #ffdab9;
-          border-radius: 4px;
-          display:block;
-          font-family: Arimo;
-          font-size: 14px;
-          width: 100%;
-          height: 40px;
-          padding-left: 10px;
-        }
-
-        .form-control i{
-          position: absolute;
-          top: 33px;
-          right: 10px;
-          visibility: hidden;
-        }
-        .form-control small{
-          position: absolute;
-          bottom:0;
-          left:0;
-          visibility: hidden;
-        }
-        .button{
-          background:#ffdab9;
-          border: 2px solid #ffdab9;
-            color: #fff;
-          font-family: inherit;
-          border-radius:  4px;
-          display: block;
-          padding: 10px;
-          font-size: 16px;
-          width: 100%;
-          cursor : pointer
-        }
-        .form-control.success input{
-          border-color: #ffdab9;
-        }
-        .form-control.error input{
-          border-color: #e74c3c;
-        }
-        .form-control.success i.fa-check-circle{
-          color:  #ffdab9;
-          visibility: visible;                          
-        }
-        .form-control.error i.fa-exclamation{ 
-          color:#e74c3c;
-          visibility: visible;                          
-        }
-        .form-control.error small{
-          color:#e74c3c;
-          visibility: visible;
-        }
-
-
-  </style>
   <script defer src="js/faq.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <header id="header-logo">
-    <img src="images/logo-copy.PNG" alt="logo">
-</header>
-<nav id="nav" class="fixed-element centered-nav">
-    <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
-    <ul>
-        <li><a class="final-link current" href="faq.html">FAQ</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li class="dropdown">
-            <a class="dropbtn" href="about.html">About</a>
-            <ul class="dropdown-content">
-                <!-- When writing html for about page, add the text after the # as an id on the respective header-->
-                <li><a href="about.html#our-objective">Our Objective</a></li>
-                <li class="submenu">
-                    <span class="dropdown-subheading">About NotchPen</span>
-                    <ul class="article-list">
-                        <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
-                        <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html#testimonies">Testimonies</a></li>
-                <li><a href="about.html#meet-the-team">Meet the Team</a></li>
-                <li><a href="about.html#contact-us">Contact Us</a></li>
-            </ul>
-        </li>
-        <li><a href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
-    </ul>
-</nav>
+  <header>
+    <img id="header-logo" src="images/logo-copy.PNG" alt="logo">
+  </header>
+  <div class="icon-container">
+      <img class="icon" id="menu-icon" src="images/menu-icon.png" alt="three line icon">
+      <a href="index.html"><img  class="icon" id="home-icon" src="images/home-icon.png" alt="home icon"></a>
+  </div>
+  <nav id="nav" class="fixed-element centered-nav">
+      <img id="logo" class="hidden" src="images/logo.PNG" alt="logo">
+      <ul>
+          <li><a class="final-link current" href="faq.html">FAQ</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li class="dropdown">
+              <a class="dropbtn" href="about.html">About</a>
+              <ul class="dropdown-content">
+                  <!-- When writing html for about page, add the text after the # as an id on the respective header-->
+                  <li><a href="about.html#our-objective">Our Objective</a></li>
+                  <li class="submenu">
+                      <span class="dropdown-subheading">About NotchPen</span>
+                      <ul class="article-list">
+                          <li><a href="Article-How-NotchPen-Works.html">How NotchPen Works</a></li>
+                          <li><a href="Article-Is-NotchPen-for-You.html">Is NotchPen for You?</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="about.html#testimonies">Testimonies</a></li>
+                  <li><a href="about.html#meet-the-team">Meet the Team</a></li>
+                  <li><a href="about.html#contact-us">Contact Us</a></li>
+              </ul>
+          </li>
+          <li><a href="index.html">Home</a></li>  <!-- change which link has the current class depending on page -->
+      </ul>
+  </nav>
 
   <div class="blue-container">
     <h1>How can we help you?</h1>
     <div class="search-form">
       <form action="/search" method="get">
-        <input type="text" id="search" name="q" placeholder="Search keywords or phrases..."> <button type="submit">Search</button>
+        <input type="text" id="search" name="q" placeholder="Search keywords or phrases..."> <button class="override" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -318,8 +87,7 @@
 
   <div class="container" >
     <div class="header" >
-        <h4>An issue,a question ? Do not hesitate to use this form to discuss with us!</h4>
-        
+        <h4>An issue, a question?<br>Do not hesitate to use this form to discuss with us!</h4>
     </div>
     <form class="form" id="form" action="/page-processing-data" method="post">
         <div class="form-control">
@@ -354,6 +122,42 @@
         </div>
     </form>
 </div>
+<footer class="main-override">
+  <div>
+      <h1>Contact Us.</h1>
+      <p>
+        At Notch, we're here to help and hear from you.</br>
+        Your feedback, questions, and inquiries are</br>
+        important to us. Feel free to get in touch using</br>
+        the following methods:</p>
+      <!--<img src="images/destination.png" alt="location" width="20" height="30" style="margin-right: 50%;">-->
+  </div>
+
+  <div>
+      <div class="contact-row">
+        <div class="contact-box">
+          <p><b>Address</b></br>
+              Notch Headquarters</br>
+              456 Inclusivity Street</br>
+              Accessibility Town, Mapleland M1A 2B3</br>
+              Canada</p>
+        </div>
+        <div class="contact-box">
+          <p><b>General Inquiries</b></br>
+                Toll-Free: ###-###-####</br>
+                Phone: ###-###-####</br>
+                Fax: ###-###-####</br>
+                Email: info@notchco.com</p>
+        </div>
+        <div class="contact-box">
+          <p><b>Social Media</b></br>
+              Instagram: @notchco</br>
+              Facebook: @notch.co</br>
+              Twitter: @notch_co</p>
+        </div>
+      </div>
+  </div>
+</footer>
 </body>
 </html>
   <!-- <script>
@@ -371,5 +175,3 @@
       });
     }
   </script> -->
-</body>
-</html>

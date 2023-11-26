@@ -40,7 +40,7 @@
 }
 
 div.main-idea{
-    height: calc(100vh - 54px);
+    min-height: calc(100vh - 54px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,7 @@ div.main-idea{
     margin-bottom: 50px;
 }
 
-.main-idea p{
+.main-idea p, .textbox p{
     width: 67%;
     text-align: justify;
 }
@@ -69,15 +69,35 @@ div.main-idea{
 }
 
 div.textbox{
-    height: 200px;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.textbox p{
-    width: 67%;
-    text-align: justify;
+.product-img{
+    max-width: 100%;
+}
+
+/* specifying behaviour when on phone size screen */
+@media screen and (max-width: 600px){
+    .main{
+        margin: 5% 5% auto 5%;
+        text-align: center;
+    }
+
+    .testimonial-container {
+        margin: auto 5%;
+        flex-direction: column;
+    }
+    
+    .testimonial {
+        width: 90%;
+    }
+
+    .main-idea p, .textbox p{
+        width: 90%;
+    }
 }
     

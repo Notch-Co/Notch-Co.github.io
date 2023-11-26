@@ -35,123 +35,11 @@ h6 {
     font-size: 25px;
 }
 
-.p3 {
+.quote {
     color: #358285;
     font-family: Cardo, 'Times New Roman', Times, serif;
     font-size: 25px;
     text-align: center;
-}
-
-.container{
-   background:#ffdab9;
-   border-radius:5px;
-   box-shadow: 0 2px 6px rgba(0,0,0.5);
-   width:400px;
-   max-width:100%;
- 
-
-}
-.header{
-   background:#f7f7f7;
-   border-bottom: 1px solid#fffdfa;
-   padding: 20px 40px;       
-        
-}
-.header h4{
-   margin: 0;
-   text-align: center;
-   font-style: italic;
-           
-}
-.form{
-   padding: 30px 40px;
-}
-.form-control{
-   margin-bottom:10px;
-   padding-bottom: 20px;
-   position: relative;
-}
-.form-control label{
-   display: inline-block;
-    margin-bottom: 5px;
-}
-.form-control select {
-   width: 100%;
-   padding:8px;
-   border: 1px solid #ccc;
-   border-radius: 4px;
-   line-height: 16px;
-   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
- }
-.form-option {
-   padding: 8px;
- }
- 
-
-.form-option:hover {
-   background-color: #f7f7f7;
- }
-textarea{
-   width:100%;
-   border:3px solid #ffdab9;
-   padding:10px;
-   margin-bottom:25px;
-   height:100px;
-   resize:none
-}
-
-.form-control input{
-   border: 2px solid #ffdab9;
-   border-radius: 4px;
-   display:block;
-   font-family: Arimo;
-   font-size: 14px;
-   width: 100%;
-   height: 40px;
-   padding-left: 10px;
-}
-
-.form-control i{
-   position: absolute;
-   top: 33px;
-   right: 10px;
-    visibility: hidden;
-}
-.form-control small{
-   position: absolute;
-   bottom:0;
-   left:0;
-   visibility: hidden;
-}
-.button{
-   background:#ffdab9;
-   border: 2px solid #ffdab9;
-    color: #fff;
-   font-family: inherit;
-   border-radius:  4px;
-   display: block;
-   padding: 10px;
-   font-size: 16px;
-   width: 100%;
-   cursor : pointer
-}
-.form-control.success input{
-   border-color: #ffdab9;
-}
-.form-control.error input{
-   border-color: #e74c3c;
-}
-.form-control.success i.fa-check-circle{
-   color:  #ffdab9;
-   visibility: visible;                          
-}
-.form-control.error i.fa-exclamation{ 
-   color:#e74c3c;
-   visibility: visible;                          
-}
-.form-control.error small{
-   color:#e74c3c;
-   visibility: visible;
 }
 
 .p4 {
@@ -180,42 +68,6 @@ textarea{
     font-size: 25px;
 }
 
-.square{
-    height: 400px;
-    width: 32%;
-    margin: 10px;
-    background-color: #dff3ff;
-    display: block;
-    float: left;
-}
-
-.square2{
-    height: 400px;
-    width: 32%;
-    margin: 10px auto;
-    background-color: #dff3ff;
-    display: block;
-    float: left;
-}
-
-.square3{
-    width: 32%;
-    height: 400px;
-    margin: 10px;
-    background-color: #dff3ff;
-    display: block;
-    float: left;
-}
-
-.square img{
-    position: relative;
-}
-
-h2#testimonies{
-    padding-top: 100px;
-    margin-bottom: 10px;
-}
-
 .meet{
     align-self: center;
 }
@@ -225,38 +77,7 @@ h2#testimonies{
     font-size: 25px;
 }
 
-
-.box {
-    float: left;
-    width: 250px;
-    margin-left: -50px;
-    margin-top: -50px;
-    padding: 50px;
-}
-
-
-.box1 {
-    float: left;
-    width: 250px;
-    margin-left: 400px;
-    margin-top: -213px;
-    padding: 50px;
-}
-
-.box2 {
-    float: left;
-    width: 250px;
-    margin-left: 800px;
-    margin-top: -214px;
-    padding: 50px;
-}
-
-.nextto {
-    display: inline-block;
-    width: 30%;
-}
-
-.team-box{
+.team-box, #our-objective{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -264,17 +85,28 @@ h2#testimonies{
     align-items: center;
 }
 
+#our-objective{
+    min-height: 100vh;
+    height: fit-content;
+    align-items: start;
+}
+
+div#testimonies{
+    padding: 80px 10%;
+}
+
 .img-row{
+    height: 32%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     margin: 20px auto;
 }
 
 .img-box{
-    width: 250px;
-    height: auto;
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,8 +115,8 @@ h2#testimonies{
 }
 
 .img-box img{
-    max-width: 100%;
-    height: auto;
+    max-height: 80%;
+    width: auto;
     margin-bottom: 10px;
 }
 
@@ -298,7 +130,6 @@ h2#testimonies{
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin: auto 10%;
 }
 
 .test-box {
@@ -316,20 +147,63 @@ h2#testimonies{
     max-width: 80%;
 }
 
-.contact-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+.form{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.contact-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
+div.main{
+    margin: 100px 10% auto 10%;
 }
+
+footer{
+    width: 100% !important;
+}
+
+/* specifying behaviour when on phone size screen */
+@media screen and (max-width: 600px){
+    div#testimonies{
+        padding: 80px 5%;
+    }
+
+    .test-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .test-box {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .team-box{
+        height: fit-content;
+    }
+
+    .img-row{
+        height: fit-content;
+        display: block;
+        margin: auto;
+    }
+
+    .img-box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .img-box img{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* formatting for article pages */
 
 .em-row{
     display: flex;
