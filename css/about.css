@@ -157,7 +157,6 @@ textarea{
 .p4 {
     color: #393F4A;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
     font-size: 20px;
 }
 
@@ -173,6 +172,12 @@ textarea{
     color: #393F4A;
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 70px;
+}
+
+.p7 {
+    color: #393F4A;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
 }
 
 .square{
@@ -220,18 +225,166 @@ h2#testimonies{
     font-size: 25px;
 }
 
+
 .box {
     float: left;
-    width: 200px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 250px;
+    margin-left: -50px;
+    margin-top: -50px;
     padding: 50px;
 }
 
+
+.box1 {
+    float: left;
+    width: 250px;
+    margin-left: 400px;
+    margin-top: -213px;
+    padding: 50px;
+}
+
+.box2 {
+    float: left;
+    width: 250px;
+    margin-left: 800px;
+    margin-top: -214px;
+    padding: 50px;
+}
+
+.nextto {
+    display: inline-block;
+    width: 30%;
+}
+
 .team-box{
-    height: calc(100vh - 54px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.img-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px auto;
+}
+
+.img-box{
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.img-box img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.img-box p{
+    margin: 0;
+}
+
+
+.test-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: auto 10%;
+}
+
+.test-box {
+    background-color: #dff3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+}
+
+.test-box p{
+    max-height: 75%;
+    max-width: 80%;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.em-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: stretch;
+    margin: 10px auto;
+    margin-top: -510px;
+}
+
+.em-box{
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.em-box img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.em-box p{
+    margin: 0;
+}
+
+.alex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: stretch;
+    margin: 10px auto;
+    margin-top: -400px;
+}
+
+.alex-box{
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.alex-box img{
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.alex-box p{
+    margin: 0;
 }
