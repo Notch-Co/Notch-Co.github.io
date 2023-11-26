@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo">
    <link rel="stylesheet" href="css/main-style.css">
    <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/form.css">
    <script src="js/main.js" defer></script>
    <link rel="icon" type="image/x-icon" href="images/favicon.PNG">
 </head>
@@ -161,62 +162,77 @@
           </div>
         </div>
 
-         <div style="background-color: #ffefe0; color: #393F4A; padding: 20px;">
-         <p class="p6" id="contact-us" style="line-height: 5px;"><b>Contact Us.</b></p>
-         <p class="p5">
-            At Notch, we're here to help and hear from you.</br>
-            Your feedback, questions, and inquiries are</br>
-            important to us. Feel free to get in touch using</br>
-            the following methods:</p>
-          <!--<img src="images/destination.png" alt="location" width="20" height="30" style="margin-right: 50%;">-->
-         <div style="background-color: #ffefe0; color: #393F4A; padding: 20px;">
-
-    <div style="background-color: #ffefe0; color: #393F4A; padding: 20px;">
-      <div class="contact-row">
-        <div class="contact-box">
-          <p class="p4"><b>Address</b></br>
-              Notch Headquarters</br>
-              456 Inclusivity Street</br>
-              Accessibility Town, Mapleland M1A 2B3</br>
-              Canada</p>
-        </div>
-        <div class="contact-box">
-          <p class="p4"><b>General Inquiries</b></br>
-                Toll-Free: ###-###-####</br>
-                Phone: ###-###-####</br>
-                Fax: ###-###-####</br>
-                Email: info@notchco.com</p>
-        </div>
-        <div class="contact-box">
-          <p class="p4"><b>Social Media</b></br>
-              Instagram: @notchco</br>
-              Facebook: @notch.co</br>
-              Twitter: @notch_co</p>
-        </div>
-      </div>
-    
-      <p class="p4" style="line-height: 1.5;">Want clarification on anything? Ask us a question!</br>
-                                 Tried our product? Leave us a review! </p> 
-      <form action="/page-processing-data" method="post">
-         <div class="name">
-           <p style="line-height: 0.5;"><label for="name">Name:</label></p>
-             <input type="text" id="name" name="name" placeholder="Your Name" required>
-         </div>
-
-         <div class="email">
-           <p style="line-height: 0.5;"><label for="email">E-Mail Address: </label></p>
-             <input type="email" id="email" name="email" placeholder="youremailaddress@gmail.com" required>
-         </div>
-
-          <div class="message">
-            <p><label for="message"> </label></p>
-              <textarea id="message" name="message" placeholder="Hello...." required></textarea>
+        <footer id="contact-us" class="main-override">
+          <div style="background-color: #ffefe0; color: #393F4A; padding: 40px;">
+              <h1>Contact Us.</h1>
+              <p>
+                At Notch, we're here to help and hear from you.</br>
+                Your feedback, questions, and inquiries are</br>
+                important to us. Feel free to get in touch using</br>
+                the following methods:</p>
+              <!--<img src="images/destination.png" alt="location" width="20" height="30" style="margin-right: 50%;">-->
           </div>
-
-          <div class="send">
-            <button type="submit">Send my message</button>
+      
+          <div style="background-color: #ffefe0; color: #393F4A; padding: 20px;">
+              <div class="contact-row">
+                <div class="contact-box">
+                  <p><b>Address</b></br>
+                      Notch Headquarters</br>
+                      456 Inclusivity Street</br>
+                      Accessibility Town, Mapleland M1A 2B3</br>
+                      Canada</p>
+                </div>
+                <div class="contact-box">
+                  <p><b>General Inquiries</b></br>
+                        Toll-Free: ###-###-####</br>
+                        Phone: ###-###-####</br>
+                        Fax: ###-###-####</br>
+                        Email: info@notchco.com</p>
+                </div>
+                <div class="contact-box">
+                  <p><b>Social Media</b></br>
+                      Instagram: @notchco</br>
+                      Facebook: @notch.co</br>
+                      Twitter: @notch_co</p>
+                </div>
+              </div>
           </div>
-     </form>
-  </div>
-</body>
+          <div style="background-color: #ffefe0; color: #393F4A; padding: 40px;">
+            <p class="p4" style="line-height: 1.5;">Want clarification on anything? Ask us a question!</br>
+              Tried our product? Leave us a review! </p> 
+              <form class="form" id="form" action="/page-processing-data" method="post">
+                <div class="form-control">
+                    <label for="name">Your name</label>
+                    <input type="text" id="username" name="username" placeholder="Your name..." required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Your e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="myemailadresse@gmail.com" required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation"></i>
+                    <small>Message d'erreur</small>
+                </div>
+                <div class="form-control">
+                    <label for="subject">What is the subject of your message ?</label>
+                    <select name="subject" id="subject" required>
+                        <option value="" disabled selected hidden>Select the subject of your message</option>
+                        <option value="question-product">Question about product?</option>
+                        <option value="review">Review</option>
+                        <option value="other">Other...</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                  <label for="message">Your message </label>
+                    <textarea id="message" name="message" placeholder="Hello...." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send my message</button>
+                </div>
+            </form>
+          </div>
+      </footer>
+  </body>
 </html>

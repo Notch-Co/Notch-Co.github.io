@@ -248,3 +248,28 @@ li.submenu{
         margin-right: auto;
     }
 }
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.main-override h1{
+    font-size: 30pt !important;
+    color: #393F4A !important;
+}
+
+.main-override p{
+    font-size: 14pt !important;
+    color: #393F4A !important;
+}
