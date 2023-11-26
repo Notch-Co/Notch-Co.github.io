@@ -174,7 +174,41 @@ li.submenu{
 
 .dropdown:hover .dropdown-content{display: block;}
 
+footer > div{
+    background-color: #ffefe0; 
+    color: #393F4A; 
+    padding: 40px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 30%;
+}
+
+.main-override h1{
+    font-size: 30pt !important;
+    color: #393F4A !important;
+}
+
+.main-override p{
+    font-size: 14pt !important;
+    color: #393F4A !important;
+}
+
+/* specifying behaviour when on phone size screen */
+
 @media screen and (max-width: 600px){
+    /* nav */
     #menu-icon, .icon-container a{
         display: inline-block;
         height: 30px;
@@ -188,6 +222,7 @@ li.submenu{
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+        z-index: 1;
     }
 
     #home-icon{
@@ -247,29 +282,15 @@ li.submenu{
     nav.collapsed-nav a.final-link{
         margin-right: auto;
     }
-}
 
-.contact-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
+    /* footer */
+    .contact-box{
+        width: 100%;
+    }
 
-.contact-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
-}
-
-.main-override h1{
-    font-size: 30pt !important;
-    color: #393F4A !important;
-}
-
-.main-override p{
-    font-size: 14pt !important;
-    color: #393F4A !important;
+    .contact-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
 }
