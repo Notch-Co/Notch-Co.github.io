@@ -86,6 +86,8 @@ h6 {
 }
 
 #our-objective{
+    min-height: 100vh;
+    height: fit-content;
     align-items: start;
 }
 
@@ -156,6 +158,49 @@ div.main{
 
 footer{
     width: 100% !important;
+}
+
+/* specifying behaviour when on phone size screen */
+@media screen and (max-width: 600px){
+    div#testimonies{
+        padding: 80px 5%;
+    }
+
+    .test-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .test-box {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .team-box{
+        height: fit-content;
+    }
+
+    .img-row{
+        height: fit-content;
+        display: block;
+        margin: auto;
+    }
+
+    .img-box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .img-box img{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /* formatting for article pages */
