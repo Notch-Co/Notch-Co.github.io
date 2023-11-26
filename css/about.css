@@ -35,33 +35,11 @@ h6 {
     font-size: 25px;
 }
 
-.p3 {
+.quote {
     color: #358285;
     font-family: Cardo, 'Times New Roman', Times, serif;
     font-size: 25px;
     text-align: center;
-}
-
-.container{
-   background:#ffdab9;
-   border-radius:5px;
-   box-shadow: 0 2px 6px rgba(0,0,0.5);
-   width:400px;
-   max-width:100%;
- 
-
-}
-.header{
-   background:#f7f7f7;
-   border-bottom: 1px solid#fffdfa;
-   padding: 20px 40px;       
-        
-}
-.header h4{
-   margin: 0;
-   text-align: center;
-   font-style: italic;
-           
 }
 
 .p4 {
@@ -90,42 +68,6 @@ h6 {
     font-size: 25px;
 }
 
-.square{
-    height: 400px;
-    width: 32%;
-    margin: 10px;
-    background-color: #dff3ff;
-    display: block;
-    float: left;
-}
-
-.square2{
-    height: 400px;
-    width: 32%;
-    margin: 10px auto;
-    background-color: #dff3ff;
-    display: block;
-    float: left;
-}
-
-.square3{
-    width: 32%;
-    height: 400px;
-    margin: 10px;
-    background-color: #dff3ff;
-    display: block;
-    float: left;
-}
-
-.square img{
-    position: relative;
-}
-
-h2#testimonies{
-    padding-top: 100px;
-    margin-bottom: 10px;
-}
-
 .meet{
     align-self: center;
 }
@@ -135,38 +77,7 @@ h2#testimonies{
     font-size: 25px;
 }
 
-
-.box {
-    float: left;
-    width: 250px;
-    margin-left: -50px;
-    margin-top: -50px;
-    padding: 50px;
-}
-
-
-.box1 {
-    float: left;
-    width: 250px;
-    margin-left: 400px;
-    margin-top: -213px;
-    padding: 50px;
-}
-
-.box2 {
-    float: left;
-    width: 250px;
-    margin-left: 800px;
-    margin-top: -214px;
-    padding: 50px;
-}
-
-.nextto {
-    display: inline-block;
-    width: 30%;
-}
-
-.team-box{
+.team-box, #our-objective{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -174,17 +85,26 @@ h2#testimonies{
     align-items: center;
 }
 
+#our-objective{
+    align-items: start;
+}
+
+div#testimonies{
+    padding: 80px 10%;
+}
+
 .img-row{
+    height: 32%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     margin: 20px auto;
 }
 
 .img-box{
-    width: 250px;
-    height: auto;
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,8 +113,8 @@ h2#testimonies{
 }
 
 .img-box img{
-    max-width: 100%;
-    height: auto;
+    max-height: 80%;
+    width: auto;
     margin-bottom: 10px;
 }
 
@@ -208,7 +128,6 @@ h2#testimonies{
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin: auto 10%;
 }
 
 .test-box {
@@ -225,6 +144,21 @@ h2#testimonies{
     max-height: 75%;
     max-width: 80%;
 }
+
+.form{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div.main{
+    margin: 100px 10% auto 10%;
+}
+
+footer{
+    width: 100% !important;
+}
+
+/* formatting for article pages */
 
 .em-row{
     display: flex;
@@ -282,9 +216,4 @@ h2#testimonies{
 
 .alex-box p{
     margin: 0;
-}
-
-.form{
-    padding: 0 !important;
-    margin: 0 !important;
 }
