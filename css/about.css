@@ -1,17 +1,17 @@
 h1 {
-    font-size: 75px;
+    font-size: 56px;
   }
   
 h2 {
-    font-size: 50px;
+    font-size: 48px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 36px;
   }
   
 h4 {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 h5 {
@@ -88,6 +88,7 @@ h6 {
 #our-objective{
     min-height: 100vh;
     height: fit-content;
+    width: 100%;
     align-items: start;
 }
 
@@ -200,6 +201,11 @@ footer{
     .img-box img{
         max-width: 100%;
         margin-bottom: 10px;
+    }
+
+    
+    #testimonies h2{
+        text-align: center;
     }
 }
 
