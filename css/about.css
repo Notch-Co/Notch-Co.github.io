@@ -161,6 +161,40 @@ footer{
     width: 100% !important;
 }
 
+/* formatting for article pages */
+.article-header-row{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin: 10% 10% 0 10%;
+}
+
+.article-img-box{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.title{
+    width: 50%;
+}
+
+.article-img-box img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.article-img-box p{
+    text-align: center;
+}
+
 /* specifying behaviour when on phone size screen */
 @media screen and (max-width: 600px){
     div#testimonies{
@@ -207,64 +241,4 @@ footer{
     #testimonies h2{
         text-align: center;
     }
-}
-
-/* formatting for article pages */
-
-.em-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: stretch;
-    margin: 10px auto;
-    margin-top: -510px;
-}
-
-.em-box{
-    width: 380px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    margin: auto 20px;
-}
-
-.em-box img{
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 0px;
-}
-
-.em-box p{
-    margin: 0;
-}
-
-.alex-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: stretch;
-    margin: 10px auto;
-    margin-top: -400px;
-}
-
-.alex-box{
-    width: 380px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    margin: auto 20px;
-}
-
-.alex-box img{
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 0px;
-}
-
-.alex-box p{
-    margin: 0;
 }
