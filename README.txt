@@ -1,11 +1,11 @@
 Team 4 Name: Notch Co.
 
 Members:
-Agiel, Batool (300352403)
-Al Jedah, Muneera (300344336)
-Pham, Xuan (300351119)
-Tarkhani, Taha Ahmed (300377467)
-Youla, Marie Haby (300388603)
+Agiel, Batool
+Al Jedah, Muneera
+Pham, Xuan
+Tarkhani, Taha Ahmed
+Youla, Marie Haby
 
 Product Name: NotchPen
 Decription:
